@@ -21,5 +21,6 @@ from bapchik import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/', include('bapchik.urls')),  # Include your app's URLs
+    path('', views.home, name='home'),
 
 ]
